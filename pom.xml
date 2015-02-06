@@ -7,12 +7,9 @@
 	<!-- ### distribution management ### -->
 	<distributionManagement>
 		<repository>
-			<id>github</id>
-			<name>Github.com repository</name>
-			<!-- 
-			<url>https://github.com/staleks/jgitflow-example/raw/master/releases</url>
-			-->
-			<url>https://github.com/staleks/jgitflow-example/tree/master/releases</url>
+			<id>nexus-local</id>
+			<name>Local Nexus repository</name>
+			<url>http://localhost:8081/nexus/content/repositories/releases/</url>
 		</repository>
 	</distributionManagement>
 
