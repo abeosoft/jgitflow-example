@@ -4,6 +4,10 @@
 	<artifactId>jgitflow-example</artifactId>
 	<version>0.0.2-SNAPSHOT</version>
 	
+	<properties>
+		<version.commons-lang3>3.3.2</version.commons-lang3>
+	</properties>
+	
 	<!-- ### distribution management ### -->
 	<distributionManagement>
 		<repository>
@@ -12,9 +16,42 @@
 			<url>http://localhost:8081/nexus/content/repositories/releases/</url>
 		</repository>
 	</distributionManagement>
+	
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.apache.commons</groupId>
+				<artifactId>commons-lang3</artifactId>
+				<version>${version.commons-lang3}</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+	
+	<dependencies>
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+		</dependency>
+	</dependencies>
 
 	<build>
 		<plugins>
+			<!-- ### ============================================== ### -->
+			<!-- ### Maven Compiler plugin   					    ### -->
+			<!-- ### ============================================== ### -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.2</version>
+				<configuration>
+					<source>1.7</source>
+					<target>1.7</target>
+				</configuration>
+      		</plugin>
+		
+			<!-- ### ============================================== ### -->
+			<!-- ### JGit GitFlow plugin       					    ### -->
+			<!-- ### ============================================== ### -->
 			<plugin>
 				<groupId>external.atlassian.jgitflow</groupId>
 				<artifactId>jgitflow-maven-api</artifactId>
