@@ -2,7 +2,16 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>rs.in.staleksit.learning</groupId>
 	<artifactId>jgitflow-example</artifactId>
-	<version>0.0.1</version>
+	<version>0.0.2-SNAPSHOT</version>
+	
+	<!-- ### distribution management ### -->
+	<distributionManagement>
+		<repository>
+			<id>nexus-local</id>
+			<name>Local Nexus repository</name>
+			<url>http://localhost:8081/nexus/content/repositories/releases/</url>
+		</repository>
+	</distributionManagement>
 
 	<build>
 		<plugins>
