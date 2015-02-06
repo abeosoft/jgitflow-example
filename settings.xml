@@ -1,0 +1,6 @@
+<settings>
+	
+	<pluginGroups>
+		<pluginGroup>external.atlassian.jgitflow</pluginGroup>
+	</pluginGroups>
+</settings>
