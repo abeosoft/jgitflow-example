@@ -3,6 +3,16 @@
 	<groupId>rs.in.staleksit.learning</groupId>
 	<artifactId>jgitflow-example</artifactId>
 	<version>0.0.1</version>
+	
+	<!-- ### distribution management ### -->
+	<distributionManagement>
+		<repository>
+			<id>github</id>
+			<name>Github.com repository</name>
+			<url>https://github.com/staleks/jgitflow-example.git</url>
+			<layout>default</layout>
+		</repository>
+	</distributionManagement>
 
 	<build>
 		<plugins>
