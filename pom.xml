@@ -2,7 +2,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>rs.in.staleksit.learning</groupId>
 	<artifactId>jgitflow-example</artifactId>
-	<version>0.0.2</version>
+	<version>0.0.3-SNAPSHOT</version>
 	
 	<properties>
 		<version.commons-lang3>3.3.2</version.commons-lang3>
